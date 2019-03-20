@@ -1,0 +1,55 @@
+{
+  "components": [
+    {
+      "tag": "actor-layout",
+      "dependencies": [],
+      "componentClass": "ActorLayout",
+      "componentPath": "components/actor-layout/actor-layout.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/actor-layout/actor-layout.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "alerts",
+          "type": "String",
+          "attr": "alerts"
+        },
+        {
+          "name": "footer",
+          "type": "String",
+          "attr": "footer"
+        },
+        {
+          "name": "header",
+          "type": "String",
+          "attr": "header"
+        },
+        {
+          "name": "overlay",
+          "type": "String",
+          "attr": "overlay"
+        },
+        {
+          "name": "sidebar",
+          "type": "String",
+          "attr": "sidebar"
+        }
+      ],
+      "hostElement": {
+        "name": "root"
+      },
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.16.2",
+    "typescriptVersion": "3.2.2"
+  },
+  "bundles": []
+}

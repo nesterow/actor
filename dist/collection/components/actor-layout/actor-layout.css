@@ -1,0 +1,115 @@
+#root{
+  width:100%;
+  height: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: none;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  background: none;
+}
+
+header.fixed {
+  position: fixed;
+  top:0;
+}
+
+header.fixed + main {
+  margin-top: 54px;
+}
+
+header.full {
+
+}
+
+aside {
+  width: max-content;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+aside.fixed{
+  position: fixed;
+  top: 0;
+}
+
+aside.under {
+  top: 48px;
+}
+
+aside + header:not(.full), aside + header + main {
+  margin-left: 250px;
+}
+
+footer {
+  width: 100%;
+  max-width: 100%;
+  min-height: 48px;
+  background: none;
+  position: sticky;
+  bottom: 0;
+}
+
+footer.fixed{
+  position: fixed;
+}
+
+#actor-alerts{
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column-reverse;
+  pointer-events: none;
+  height: 100vh;
+  min-width: 300px;
+}
+
+#actor-alerts *{
+  pointer-events: all;
+}
+
+#actor-alerts.bottom-right{
+  right: 0;
+  flex-direction: column-reverse;
+}
+
+#actor-alerts.top-right{
+  right: 0;
+  flex-direction: column;
+}
+#actor-alerts.top-left{
+  left: 0;
+  flex-direction: column;
+}
+#actor-alerts.bottom-left{
+  left: 0;
+  flex-direction: column-reverse;
+}
+
+#actor-overlay{
+  display: flex;
+  background: #eeeeee99;
+  position: fixed;
+  overflow-y: visible;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+}
+
+
+
