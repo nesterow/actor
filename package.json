@@ -1,5 +1,5 @@
 {
-  "name": "actor",
+  "name": "actor-layout",
   "version": "0.0.1",
   "description": "An application layout component",
   "module": "dist/esm/index.js",
