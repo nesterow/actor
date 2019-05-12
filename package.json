@@ -1,7 +1,7 @@
 {
   "name": "actor",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "An application layout component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "unpkg": "dist/ionic.js",
@@ -9,6 +9,12 @@
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
+  ],
+  "keywords": [
+    "layout",
+    "webcomponents",
+    "dashboard",
+    "stencil"
   ],
   "scripts": {
     "build": "stencil build --docs",
